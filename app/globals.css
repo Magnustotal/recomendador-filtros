@@ -1,0 +1,11 @@
+/* app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Puedes agregar estilos globales personalizados aquí si lo necesitas */
+body {
+    background-color: #f0f4f8; /* Un fondo gris claro */
+    color: #333;          /* Texto oscuro */
+}
