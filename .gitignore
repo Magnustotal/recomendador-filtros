@@ -1,33 +1,56 @@
-# dependencies
+# Dependencias de Node.js
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# next.js
+# Archivos de caché y compilación de Next.js
 /.next/
 /out/
+/build/  # Agregado por si usas un script de build personalizado
 
-# production
-/build
+# Archivos de prueba
+/coverage
 
-# misc
+# Archivos de sistema (macOS)
 .DS_Store
-*.pem
 
-# debug
+# Archivos de seguridad (llaves privadas)
+*.pem
+*.key  # Agregado para mayor seguridad
+*.cer  # Agregado
+
+# Archivos de log de npm y yarn
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# Archivos de entorno local (¡IMPORTANTE!)
+.env
+.env.*
+!.env.example  # Excepción: Permite .env.example (buena práctica)
+!.env.local.example
+.env.local
 
-# vercel
+# Archivos temporales del editor
+*.swp  # Vim
+*.swo  # Vim
+*~     # Emacs, Gedit, etc.
+*.log
+*.tmp
+
+# Archivos de configuración de IDEs/Editores
+.idea/      # IntelliJ IDEA
+.vscode/    # VS Code
+*.sublime-project
+*.sublime-workspace
+
+# Archivos generados por Vercel
 .vercel
 
-# typescript
+# Archivos de TypeScript (si usas TypeScript)
 *.tsbuildinfo
 next-env.d.ts
+
+# Otros archivos comunes que se suelen ignorar
+Thumbs.db   # Windows thumbnails
+desktop.ini # Windows folder settings
